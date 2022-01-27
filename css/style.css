@@ -3,6 +3,7 @@
 .inner{
   width: 1100px;
   background-color: #fff;
+  margin: 0 auto;
 }
 
 .nav_container{
@@ -20,4 +21,34 @@
   background-color: #689cc5;
   font-size: 16px;
   margin: 1em 1em;
+}
+
+.keyvisual{
+  position: relative;
+}
+
+.keyvisual_Img{
+  background-image: url("../img/keyvisual/keyvisual.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  height: 935px;
+}
+
+.keyvisual_Textbox{
+  text-align: center;
+}
+
+.keyvisual_title{
+  padding-top: 400px;
+  font-size: 65px;
+  font-weight: 400;
+  color: #90A6DF;
+}
+
+.keyvisual_subtitle{
+  font-size: 40px;
+  font-weight: 100;
+  color: #fff;
+  padding-top: 30px;
 }
