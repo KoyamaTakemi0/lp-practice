@@ -31,7 +31,7 @@
   background-image: url("../img/keyvisual/keyvisual.jpg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: contain;
+  background-size: 1100px 935px;
   height: 935px;
 }
 
@@ -51,4 +51,36 @@
   font-weight: 100;
   color: #fff;
   padding-top: 30px;
+}
+
+.work{
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  background-color: #e2eff8;
+}
+
+.work_pc{
+  background-image: url("../img/pc/pc.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 250px;
+  width: 250px;
+}
+
+.work_Textbox{
+  text-align: center;
+}
+
+.work_title{
+  padding-top: 20px;
+  font-size: 60px;
+  letter-spacing: 10px;
+}
+
+.work_text{
+  padding: 35px 0px;
+  font-size: 16px;
 }
