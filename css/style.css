@@ -84,3 +84,109 @@
   padding: 35px 0px;
   font-size: 16px;
 }
+
+.skills{
+  position: relative;
+  /* display: flex; */
+  margin: 0 auto;
+  height: auto;
+}
+
+.skills_Textbox{
+  text-align: center;
+}
+
+.skills_title{
+  padding-top: 50px;
+  font-size: 60px;
+  letter-spacing: 10px;
+}
+
+.skills_itembox{
+  display: grid;
+  grid-template-columns: 300px, 300px, 300px;
+  grid-template-rows: 300px, 300px;
+  gap: 100px 100px;
+  margin-top: 50px;
+  height: auto;
+  padding: 50px 0px;
+  /* justify-content: center; */
+}
+
+.skills_item01{
+  background-image: url("../img/skills/skills_1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  height: 300px;
+  width: 300px;
+}
+
+.skills_item02{
+  background-image: url("../img/skills/skills_2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  height: 300px;
+  width: 300px;
+}
+
+.skills_item03{
+  background-image: url("../img/skills/skills_3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  height: 300px;
+  width: 300px;
+}
+
+.skills_item04{
+  background-image: url("../img/skills/skills_4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  height: 300px;
+  width: 300px;
+}
+
+.skills_item05{
+  background-image: url("../img/skills/skills_5.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  height: 300px;
+  width: 300px;
+}
+
+.skills_item06{
+  background-image: url("../img/skills/skills_6.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  height: 300px;
+  width: 300px;
+} 
