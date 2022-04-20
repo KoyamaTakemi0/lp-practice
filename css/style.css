@@ -1,11 +1,16 @@
 @charset "utf-8";
-
+/* ★★★★共通部分★★★★ */
 .inner{
   width: 1100px;
   background-color: #fff;
   margin: 0 auto;
 }
 
+a{
+  text-decoration: none;
+}
+
+/* ★★★★nav部分★★★★ */
 .nav_container{
   display: flex;
   margin: 0 auto;
@@ -13,24 +18,28 @@
 }
 
 .nav_archway{
-  margin: 5px 0;
+  padding: 5px 0;
 }
 
 .btn_contact{
-  color: #fff;
+  /* color: #fff; */
   background-color: #689cc5;
   font-size: 16px;
   margin: 1em 1em;
 }
 
-a{
-  text-decoration: none;
-}
-
-.btn_contact a:link, .btn_contact a:visited{
+.btn_contact a:visited{
   color: #fff;
 }
 
+.btn_contact a:hover{
+  color: #333;
+  transition: 0.3s;
+}
+
+
+
+/* ★★★★keyvisual部分★★★★ */
 .keyvisual{
   position: relative;
 }
@@ -61,12 +70,14 @@ a{
   padding-top: 30px;
 }
 
+/* ★★★★work部分★★★★ */
 .work{
   position: relative;
   display: flex;
   margin: 0 auto;
   justify-content: space-around;
   background-color: #e2eff8;
+  padding-top: 50px;
 }
 
 .work_pc{
@@ -81,6 +92,7 @@ a{
 .work_Textbox{
   text-align: center;
   width: 60%;
+  padding: 0px 30px;
 }
 
 .work_title{
@@ -94,6 +106,7 @@ a{
   font-size: 16px;
 }
 
+/* ★★★★skills部分★★★★ */
 .skills{
   position: relative;
   /* display: flex; */
@@ -119,7 +132,6 @@ a{
   margin-top: 50px;
   height: auto;
   padding: 50px 0px;
-  /* justify-content: center; */
 }
 
 .skills_item01{
@@ -200,6 +212,15 @@ a{
   width: 300px;
 } 
 
+.hover_skills{
+  opacity: 0.7;
+}
+
+.hover_skills:hover{
+  opacity: 1.0;
+}
+
+/* ★★★★plan部分★★★★*/
 .plan{
   position: relative;
   background-color: #cfdde6;
@@ -246,6 +267,7 @@ a{
   background-color: #deebf8;
 }
 
+/* ★★★★sns部分★★★★ */
 .sns{
   position: relative;
   background-color: #e2eff8;
@@ -263,9 +285,29 @@ a{
   display: inline-block;
   width: 185px;
   font-size: 40px;
-  color: #7a7f80;
 }
 
-.sns_link li a:link, .sns_link li a:visited{
+.hover_sns{
   color: #7a7f80;
+  transition: 0.5s;
+}
+
+.hover_sns:hover{
+  color: #fff;
+}
+
+/* .sns_link li a:visited{
+  color: #7a7f80;
+} */
+
+/* ★★★★footer部分★★★★ */
+.footer{
+  background-color: #cdd6dc;
+  position: relative;
+  padding: 5px 0px;
+}
+
+.footer_text{
+  text-align: right;
+  padding-right: 40px;
 }
