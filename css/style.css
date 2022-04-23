@@ -70,6 +70,22 @@ a{
   padding-top: 30px;
 }
 
+/* ★★★★keyvisual部分レスポンシブ対応（SP）★★★★ */
+@media screen and (max-width:767px) {
+  .keyvisual_Img{
+    background-size: 1100px 535px;
+    height: 535px;
+  }
+  .keyvisual_title{
+    font-size: 40px;
+    padding-top: 200px;
+  }
+
+  .keyvisual_subtitle{
+    font-size: 30px;
+  }
+}
+
 /* ★★★★work部分★★★★ */
 .work{
   position: relative;
@@ -104,6 +120,42 @@ a{
 .work_text{
   padding: 35px 0px;
   font-size: 16px;
+}
+
+/* ★★★★work部分レスポンシブ対応（TAB）★★★★ */
+@media screen and (min-width:1101px) and (max-width:1199px){
+  .work{
+    display: block;
+  }
+
+  .work_pc{
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .work_Textbox{
+    margin: 0 auto;
+    width: 100%;
+    padding: 0px;
+  }
+}
+
+/* ★★★★work部分レスポンシブ対応（SP）★★★★ */
+@media screen and (max-width:767px){
+  .work{
+    display: block;
+  }
+
+  .work_pc{
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .work_Textbox{
+    margin: 0 auto;
+    width: 100%;
+    padding: 0px;
+  }
 }
 
 /* ★★★★skills部分★★★★ */
@@ -267,6 +319,18 @@ a{
   background-color: #deebf8;
 }
 
+/* ★★★★plan部分レスポンシブ対応（SP）★★★★ */
+@media screen and (max-width:767px){
+  .plan_table th{
+    line-height: 22px;
+    font-size: 14px;
+  }
+
+  .plan_table td{
+    font-size: 12px;
+  }
+}
+
 /* ★★★★sns部分★★★★ */
 .sns{
   position: relative;
@@ -296,9 +360,26 @@ a{
   color: #fff;
 }
 
-/* .sns_link li a:visited{
-  color: #7a7f80;
-} */
+/* ★★★★sns部分レスポンシブ対応（SP）★★★★ */
+@media screen and (max-width:767px){
+  .sns{
+    position: relative;
+    background-color: #e2eff8;
+    padding: 50px 0px;
+  }
+  .sns_link{
+    display: block;
+    padding: 0px 5px;
+  }
+
+  .sns_link li{
+    display: block;
+    width: 100%;
+    font-size: 40px;
+    padding: 50px 120px;
+  }
+}
+
 
 /* ★★★★footer部分★★★★ */
 .footer{
