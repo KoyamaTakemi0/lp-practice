@@ -177,6 +177,77 @@ a{
 }
 
 .skills_itembox{
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-top: 50px; */
+  height: auto;
+  padding: 50px 0px;
+  gap: 100px 100px;
+}
+
+/* .skills_itembox a:nth-child(3n+1){
+  margin-left: 0px;
+}
+
+.skills_itembox a:nth-child(3n){
+  margin-right: 0px;
+} */
+
+.skills_item01{
+  background-image: url("../img/skills/skills_1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 300px;
+  width: 300px;
+}
+
+.skills_item02{
+  background-image: url("../img/skills/skills_2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 300px;
+  width: 300px;
+}
+
+.skills_item03{
+  background-image: url("../img/skills/skills_3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 300px;
+  width: 300px;
+}
+
+.skills_item04{
+  background-image: url("../img/skills/skills_4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 300px;
+  width: 300px;
+}
+
+.skills_item05{
+  background-image: url("../img/skills/skills_5.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 300px;
+  width: 300px;
+}
+
+.skills_item06{
+  background-image: url("../img/skills/skills_6.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 300px;
+  width: 300px;
+}
+/*↓↓↓↓　gridで実装した場合　↓↓↓↓
+ .skills_itembox{
   display: grid;
   grid-template-columns: 300px, 300px, 300px;
   grid-template-rows: 300px, 300px;
@@ -262,7 +333,7 @@ a{
   grid-row-end: 3;
   height: 300px;
   width: 300px;
-} 
+}  */
 
 .hover_skills{
   opacity: 0.7;
@@ -270,6 +341,47 @@ a{
 
 .hover_skills:hover{
   opacity: 1.0;
+}
+
+/* ★★★★skills部分レスポンシブ対応（TAB,SP）★★★★ */
+@media screen and (min-width:1101px) and (max-width:1199px){
+  .skills_itembox{
+    display: block;
+    height: auto;
+    padding: 50px 0px;
+  }
+  .skills_itembox a{
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .skills_itembox a:nth-child(3n){
+    margin-bottom: 80px;
+  }
+
+  .skills_itembox a:last-child{
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width:767px){
+  .skills_itembox{
+    display: block;
+    height: auto;
+    padding: 50px 0px;
+  }
+  .skills_itembox a{
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .skills_itembox a:nth-child(3n){
+    margin-bottom: 80px;
+  }
+
+  .skills_itembox a:last-child{
+    margin-bottom: 0px;
+  }
 }
 
 /* ★★★★plan部分★★★★*/
