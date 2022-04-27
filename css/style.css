@@ -6,6 +6,19 @@
   margin: 0 auto;
 }
 
+/* ★★★★共通部分レスポンシブ対応（TAB,SP）★★★★ */
+@media screen and (min-width:1101px) and (max-width:1199px){
+  .inner{
+    width: 97%;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .inner{
+    width: 97%;
+  }
+}
+
 a{
   text-decoration: none;
 }
@@ -22,10 +35,10 @@ a{
 }
 
 .btn_contact{
-  /* color: #fff; */
   background-color: #689cc5;
   font-size: 16px;
   margin: 1em 1em;
+  cursor: pointer;
 }
 
 .btn_contact a:visited{
@@ -37,6 +50,36 @@ a{
   transition: 0.3s;
 }
 
+/* ★★★★nav部分レスポンシブ対応（SP）ハンバーガーメニュー★★★★ */
+@media screen and (max-width:767px) {
+  .btn_contact{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    font-size: 0px;
+  }
+
+  .btn_contact a, .btn_contact a::before, .btn_contact a::after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #fff;
+    position: absolute;
+  }
+
+  .btn_contact a::before{
+    top: 8px;
+  }
+
+  .btn_contact a::after{
+    bottom: 8px;
+  }
+}
 
 
 /* ★★★★keyvisual部分★★★★ */
@@ -48,7 +91,7 @@ a{
   background-image: url("../img/keyvisual/keyvisual.jpg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 1100px 935px;
+  background-size: 100% 935px;
   height: 935px;
 }
 
@@ -72,8 +115,12 @@ a{
 
 /* ★★★★keyvisual部分レスポンシブ対応（SP）★★★★ */
 @media screen and (max-width:767px) {
+  .keyvisual{
+    width: 100%;
+  }
+
   .keyvisual_Img{
-    background-size: 1100px 535px;
+    background-size: 100% 535px;
     height: 535px;
   }
   .keyvisual_title{
@@ -144,6 +191,7 @@ a{
 @media screen and (max-width:767px){
   .work{
     display: block;
+    width: 100%;
   }
 
   .work_pc{
@@ -161,7 +209,6 @@ a{
 /* ★★★★skills部分★★★★ */
 .skills{
   position: relative;
-  /* display: flex; */
   margin: 0 auto;
   height: auto;
 }
@@ -179,19 +226,10 @@ a{
 .skills_itembox{
   display: flex;
   flex-wrap: wrap;
-  /* margin-top: 50px; */
   height: auto;
   padding: 50px 0px;
   gap: 100px 100px;
 }
-
-/* .skills_itembox a:nth-child(3n+1){
-  margin-left: 0px;
-}
-
-.skills_itembox a:nth-child(3n){
-  margin-right: 0px;
-} */
 
 .skills_item01{
   background-image: url("../img/skills/skills_1.png");
@@ -433,6 +471,10 @@ a{
 
 /* ★★★★plan部分レスポンシブ対応（SP）★★★★ */
 @media screen and (max-width:767px){
+  .plan{
+    width: 100%;
+  }
+
   .plan_table th{
     line-height: 22px;
     font-size: 14px;
@@ -477,6 +519,7 @@ a{
   .sns{
     position: relative;
     background-color: #e2eff8;
+    width: 100%;
     padding: 50px 0px;
   }
   .sns_link{
@@ -486,8 +529,8 @@ a{
 
   .sns_link li{
     display: block;
-    width: 100%;
     font-size: 40px;
+    margin: 0 auto;
     padding: 50px 120px;
   }
 }
